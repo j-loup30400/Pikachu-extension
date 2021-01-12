@@ -16,8 +16,7 @@
         "storage"
     ],
     "web_accessible_resources": [
-        "images/icon.png",
-        "images/song.mp3"
+        "images/icon.png"
     ],
     "icons": {
         "16": "images/icon.png",
