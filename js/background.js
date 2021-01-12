@@ -1,5 +1,5 @@
 chrome.contextMenus.create({
-  title: "Be Poodle",
+  title: "RubberDuck",
   contexts: ["selection"],
   onclick: openTab(),
 });

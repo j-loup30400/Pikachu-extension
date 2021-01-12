@@ -12,15 +12,31 @@
     "browser_action": {
         "default_icon": "images/icon.png"
     },
+    "permissions": [
+        "<all_urls>",
+        "webRequest",
+        "webRequestBlocking",
+        "tabs",
+        "storage"
+    ],
+    "web_accessible_resources": [
+        "images/icon.png"
+    ],
     "icons": {
         "16": "images/icon.png",
         "32": "images/icon.png",
         "48": "images/icon.png",
         "128": "images/icon.png"
     },
-    "content_scripts": [{
-        "matches": ["<all_urls>"],
-        "all_frames": true,
-        "js": ["js/rubberDuck.js"]
-    }]
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "all_frames": true,
+            "js": [
+                "js/rubberDuck.js"
+            ]
+        }
+    ]
 }
