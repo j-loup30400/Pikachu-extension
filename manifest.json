@@ -1,12 +1,12 @@
 {
     "manifest_version": 2,
-    "name": "RubberDuck",
+    "name": "Pikachu extension",
     "version": "1.0",
-    "author": "mancia08",
-    "description": "Marc everywhere!!!",
+    "author": "J-loup",
+    "description": "Transform all picture in Pikachu",
     
     "browser_action": {
-        "default_icon": "images/icon.png"
+        "default_icon": "icon.png"
     },
     "permissions": [
         "<all_urls>",
@@ -16,13 +16,13 @@
         "storage"
     ],
     "web_accessible_resources": [
-        "images/icon.png"
+        "icon.png"
     ],
     "icons": {
-        "16": "images/icon.png",
-        "32": "images/icon.png",
-        "48": "images/icon.png",
-        "128": "images/icon.png"
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
     },
     "content_scripts": [
         {
@@ -31,7 +31,7 @@
             ],
             "all_frames": true,
             "js": [
-                "js/rubberDuck.js"
+                "background.js"
             ]
         }
     ]
